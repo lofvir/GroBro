@@ -1,5 +1,5 @@
-name: "GroBro"
-description: "Growatt MQTT Message Broker"
+name: "GroBro (fork)"
+description: "GroBro is a bridge service that decodes encrypted MQTT from Growatt"
 version: "2.0.0"
 slug: "grobro"
 init: false
