@@ -2,4 +2,4 @@
 
 set -e
 
-exec mosquitto
+exec mosquitto -c mosquitto.conf
