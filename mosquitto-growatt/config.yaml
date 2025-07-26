@@ -1,0 +1,35 @@
+name: "Mosquitto Growatt"
+description: "MQTT TLS Broker for Growatt devices. To be used with GroBro as bridge"
+version: "0.0.1"
+slug: "mosquitto-growatt"
+init: false
+url: https://github.com/lofvir/GroBro
+arch:
+  - armhf
+  - armv7
+  - aarch64
+  - amd64
+  - i386
+
+build_from:
+  amd64: "ghcr.io/home-assistant/amd64-python"
+  armhf: "ghcr.io/home-assistant/armhf-python"
+  armv7: "ghcr.io/home-assistant/armv7-python"
+  aarch64: "ghcr.io/home-assistant/aarch64-python"
+  i386: "ghcr.io/home-assistant/i386-python"
+ports:
+  7006/tcp: 7006
+map:
+  - ssl
+  - share
+options:
+  MQTT_HOST: example.duckdns.org
+  MQTT_PORT: 7006
+  MQTT_USER: ""
+  MQTT_PASS: ""
+
+schema:
+  MQTT_HOST: str
+  MQTT_PORT: int
+  MQTT_USER: str
+  MQTT_PASS: str
