@@ -1,6 +1,6 @@
 name: "Mosquitto Growatt"
 description: "MQTT TLS Broker for Growatt devices. To be used with GroBro as bridge"
-version: "0.0.2"
+version: "0.0.3"
 slug: "mosquitto-growatt"
 init: false
 url: https://github.com/lofvir/GroBro
